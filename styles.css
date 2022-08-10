@@ -1,0 +1,146 @@
+.card h5 {
+  font-family: Arial, Helvetica, sans-serif;
+}
+.card p {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #fff;
+}
+
+.navbar {
+  z-index: 1;
+}
+
+.carousel {
+  position: relative;
+  z-index: 0;
+}
+
+.titulos-carousel {
+  color: #fff;
+  position: relative;
+  bottom: 30vh;
+  font-size: 2em;
+  z-index: 5;
+}
+
+.subtitulos-carousel {
+  color: #fff;
+  position: relative;
+  bottom: 30vh;
+  font-size: 1rem;
+  z-index: 5;
+}
+
+.titulos {
+  display: flex;
+  justify-content: center;
+}
+
+.contenedor-boton {
+  display: flex;
+  justify-content: center;
+}
+
+.boton {
+  position: absolute;
+  bottom: 25vh;
+}
+
+.contenido {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  align-items: center;
+  width: 100%;
+  padding: 4rem;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  max-width: 1000px;
+  position: relative;
+  top: 10px;
+}
+
+.contenido {
+  background-color: #fff;
+  padding: 15px;
+  position: relative;
+  z-index: 2;
+  border-radius: 8px;
+  box-shadow: 1px 1px 15px 0px #000;
+  margin: auto;
+}
+
+.texto-blanco {
+  color: #fff;
+}
+
+.texto-azul {
+  color: rgb(44, 64, 84);
+}
+
+.card-1 {
+  background: rgb(44, 64, 84);
+  color: #fff;
+  border-radius: 4px;
+  padding: 30px 15px;
+}
+
+.card-3 {
+  background-color: rgb(227, 233, 233);
+  border-radius: 4px;
+  padding: 30px 15px;
+}
+
+.card-4 {
+  background-color: rgb(245, 13, 73);
+  border-radius: 4px;
+  padding: 30px 15px;
+}
+
+.svg {
+  position: relative;
+  left: 90%;
+}
+
+.card {
+  width: 100%;
+  height: auto;
+}
+
+.card {
+  transition: 0.4s;
+  object-fit: cover;
+}
+
+.card:hover {
+  transform: scale(1.1);
+}
+
+.redes {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  padding: 10px;
+  margin-top: 3rem;
+  background-color: rgb(227, 233, 233);
+  color: rgb(44, 64, 84);
+}
+
+.card-link {
+  margin: 0 0 0 20px;
+  padding: 0 5px 0 5px;
+}
+
+/*# sourceMappingURL=styles.css.map */

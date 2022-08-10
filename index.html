@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- FAVICON -->
+    <link rel="icon" href="imagenes/favicon.png" type="image/x-icon" />
+
+    <!-- TITULO -->
+    <title>Openbank</title>
+
+    <!-- CSS-->
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+
+    <!-- CSS BS5 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+
+</head>
+<body>
+
+
+<!-- NAVBAR -->
+
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#"><img src="imagenes/group.svg"></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Productos y Servicios
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                      <li><a class="dropdown-item" href="#">Action</a></li>
+                      <li><a class="dropdown-item" href="#">Another action</a></li>
+                      <li><hr class="dropdown-divider"></li>
+                      <li><a class="dropdown-item" href="#">Something else here</a></li>
+                    </ul>
+                  </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Promociones</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="#">Quiénes Somos</a>
+              </li>
+            </ul>
+            <form class="d-flex">
+                <button type="button" class="btn btn-danger m-1">Hacete cliente</button>
+                <button type="button" class="btn btn-outline-primary m-1">Mi Openbank</button>
+            </form>
+          </div>
+        </div>
+      </nav>
+
+
+<!-- CAROUSEL -->
+
+
+<div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+  <div class="MbProgressBulletsstyled__Wrapper-sc-w4eaoz-0 dcAvCR"><div data-testid="progress-bullet" class="MbProgressBulletsstyled__Bullet-sc-w4eaoz-1 kySMxR"></div><div data-testid="progress-bullet" class="MbProgressBulletsstyled__Bullet-sc-w4eaoz-1 gamYKo"></div><div data-testid="progress-bullet" class="MbProgressBulletsstyled__Bullet-sc-w4eaoz-1 gamYKo"></div></div>
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="imagenes/man-phone.png" class="d-block w-100 img-fluid" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+          <h2 class="titulos-carousel">PERSONALIZÁ TU SEGURIDAD</h2>
+          <h4 class="subtitulos-carousel">Descubrí todas las opciones que tenemos para que operes con más tranquilidad.</h4>
+          </div>
+          <div class="contenedor-boton">
+            <button type="button" class="btn btn-danger boton mx-auto">Hacete cliente</button>
+          </div>
+        </div>
+      <div class="carousel-item">
+        <img src="imagenes/tarjeta.png" class="d-block w-100 img-fluid" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+          <h2 class="titulos-carousel">NUEVA TARJETA OPEN</h2>
+          <h4 class="subtitulos-carousel">Transparente. Segura. Fachera</h4>
+          <div class="contenedor-boton">
+            <button type="button" class="btn btn-danger boton mx-auto">Hacete cliente</button>
+          </div>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="imagenes/man-park.png" class="d-block w-100 img-fluid" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+          <h2 class="titulos-carousel">¡EL BANCO DEL FUTURO HOY!</h2>
+          <h4 class="subtitulos-carousel">Viví la experiencia Openbank.</h4>
+          <div class="contenedor-boton">
+            <button type="button" class="btn btn-danger boton mx-auto">Hacete cliente</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+
+
+<!-- MAIN -->
+
+<div class="container-fluid d-flex justify-content-center tarjetas">
+<div class="row container-fluid d-flex justify-content-center"> <!--row row-cols-1 row-cols-md-2 g-4-->
+  <div class="contenido container-fluid row">
+  <div class="col-xs-12 col-md-2 col-lg-3">
+    <div class="card">
+      <div class="card-body card-1 container-fluid">
+        <h5 class="card-title texto-blanco">Lo que decimos es lo que hacemos</h5>
+        <p class="card-text texto-blanco">Venimos a darte soluciones, no a sumarte problemas</p>
+        <svg class="svg" width="24px" height="24px" viewBox="0 0 24 24" aria-hidden="true" data-id="AngleRight"><path fill="#ffffff" d="M5.85012457,17 C5.64892786,17 5.44914802,16.9307319 5.2876239,16.7908104 C4.93482121,16.4874163 4.90223301,15.960979 5.21394623,15.6174094 L11.8619391,8.26806742 C12.1835704,7.91064419 12.8140812,7.91064419 13.1357126,8.26806742 L19.7865392,15.6174094 C20.0982524,15.960979 20.0642473,16.4874163 19.7128615,16.7908104 C19.358642,17.0942046 18.823062,17.0637266 18.5141825,16.7187716 L12.4981174,10.0731933 L6.48630291,16.7187716 C6.31911128,16.9057954 6.08532637,17 5.85012457,17" transform="translate(12.500000, 12.500000) rotate(-270.000000) translate(-12.500000, -12.500000) "></path></svg>
+      </div>
+    </div>
+  </div>
+  <div class="col-xs-12 col-md-2 col-lg-3">
+    <div class="card">
+      <div class="card-body card-2 container-fluid">
+        <h5 class="card-title texto-azul">Personalizalo como quieras</h5>
+        <p class="card-text texto-azul">Queremos que al decir mi banco, lo sientas tuyo</p>
+        <svg class="svg" width="24px" height="24px" viewBox="0 0 24 24" aria-hidden="true" data-id="AngleRight"><path fill="#002B45" d="M5.85012457,17 C5.64892786,17 5.44914802,16.9307319 5.2876239,16.7908104 C4.93482121,16.4874163 4.90223301,15.960979 5.21394623,15.6174094 L11.8619391,8.26806742 C12.1835704,7.91064419 12.8140812,7.91064419 13.1357126,8.26806742 L19.7865392,15.6174094 C20.0982524,15.960979 20.0642473,16.4874163 19.7128615,16.7908104 C19.358642,17.0942046 18.823062,17.0637266 18.5141825,16.7187716 L12.4981174,10.0731933 L6.48630291,16.7187716 C6.31911128,16.9057954 6.08532637,17 5.85012457,17" transform="translate(12.500000, 12.500000) rotate(-270.000000) translate(-12.500000, -12.500000) "></path></svg>
+      </div>
+    </div>
+  </div>
+  <div class="col-xs-12 col-md-2 col-lg-3">
+    <div class="card">
+      <div class="card-body card-3 container-fluid">
+        <h5 class="card-title texto-azul">Regulados por el BCRA</h5>
+        <p class="card-text texto-azul">Nos ocupamos de tu seguridad, vos no te preocupes</p>
+        <svg class="svg" width="24px" height="24px" viewBox="0 0 24 24" aria-hidden="true" data-id="AngleRight"><path fill="#002B45" d="M5.85012457,17 C5.64892786,17 5.44914802,16.9307319 5.2876239,16.7908104 C4.93482121,16.4874163 4.90223301,15.960979 5.21394623,15.6174094 L11.8619391,8.26806742 C12.1835704,7.91064419 12.8140812,7.91064419 13.1357126,8.26806742 L19.7865392,15.6174094 C20.0982524,15.960979 20.0642473,16.4874163 19.7128615,16.7908104 C19.358642,17.0942046 18.823062,17.0637266 18.5141825,16.7187716 L12.4981174,10.0731933 L6.48630291,16.7187716 C6.31911128,16.9057954 6.08532637,17 5.85012457,17" transform="translate(12.500000, 12.500000) rotate(-270.000000) translate(-12.500000, -12.500000) "></path></svg>
+      </div>
+    </div>
+  </div>
+  <div class="col-xs-12 col-md-2 col-lg-3">
+    <div class="card">
+      <div class="card-body card-4 container-fluid">
+        <h5 class="card-title texto-blanco">Abiertos a escucharte</h5>
+        <p class="card-text texto-blanco">Trabajamos para que Banco sea sinónimo de Servicio</p>
+        <svg class="svg" width="24px" height="24px" viewBox="0 0 24 24" aria-hidden="true" data-id="AngleRight"><path fill="#ffffff" d="M5.85012457,17 C5.64892786,17 5.44914802,16.9307319 5.2876239,16.7908104 C4.93482121,16.4874163 4.90223301,15.960979 5.21394623,15.6174094 L11.8619391,8.26806742 C12.1835704,7.91064419 12.8140812,7.91064419 13.1357126,8.26806742 L19.7865392,15.6174094 C20.0982524,15.960979 20.0642473,16.4874163 19.7128615,16.7908104 C19.358642,17.0942046 18.823062,17.0637266 18.5141825,16.7187716 L12.4981174,10.0731933 L6.48630291,16.7187716 C6.31911128,16.9057954 6.08532637,17 5.85012457,17" transform="translate(12.500000, 12.500000) rotate(-270.000000) translate(-12.500000, -12.500000) "></path></svg>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+</div>
+
+
+<!-- Redes Sociales -->
+
+
+  <div class="redes">
+    <p>Seguinos en nuestras redes y enterate de todo</p>
+    <a href="#" class="card-link"><img src="imagenes/face.svg" class="d-inline" alt="..."></a>
+    <a href="#" class="card-link"><img src="imagenes/insta.svg" class="d-inline" alt="..."></a>
+    <a href="#" class="card-link"><img src="imagenes/twitter.svg" class="d-inline" alt="..."></a>
+    <a href="#" class="card-link"><img src="imagenes/linkedin.svg" class="d-inline" alt="..."></a>
+    <a href="#" class="card-link"><img src="imagenes/youtube.svg" class="d-inline" alt="..."></a>
+  </div>
+
+
+
+
+
+
+
+
+
+
+<!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+</body>
+</html>
