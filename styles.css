@@ -87,11 +87,11 @@ body {
 }
 
 .texto-azul {
-  color: rgb(44, 64, 84);
+  color: rgb(0, 43, 69);
 }
 
 .card-1 {
-  background: rgb(44, 64, 84);
+  background: rgb(0, 43, 69);
   color: #fff;
   border-radius: 4px;
   padding: 30px 15px;
@@ -135,12 +135,69 @@ body {
   padding: 10px;
   margin-top: 3rem;
   background-color: rgb(227, 233, 233);
-  color: rgb(44, 64, 84);
+  color: rgb(0, 43, 69);
 }
 
 .card-link {
   margin: 0 0 0 20px;
   padding: 0 5px 0 5px;
+}
+
+.botones {
+  display: flex;
+  justify-content: end;
+  flex-wrap: wrap;
+  position: relative;
+  top: 30vh;
+}
+
+.phone {
+  position: relative;
+  left: 10vw;
+}
+
+.links {
+  color: rgb(0, 43, 69);
+}
+
+.usuario {
+  text-decoration: none;
+  color: rgb(0, 43, 69);
+}
+
+.foot {
+  text-decoration: none;
+  color: #fff;
+  padding-left: 30px;
+}
+
+.grupo-santander {
+  width: 200px;
+  height: auto;
+}
+
+.santander {
+  background: rgb(0, 43, 69);
+}
+
+.logo {
+  padding-left: 30px;
+}
+
+.footer {
+  display: inline;
+  justify-content: space-between;
+  padding-left: 30px;
+  padding-top: 15px;
+}
+
+.copyright {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  padding-top: 15px;
+  background-color: rgb(227, 233, 233);
+  color: rgb(0, 43, 69);
 }
 
 /*# sourceMappingURL=styles.css.map */

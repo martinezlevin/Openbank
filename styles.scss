@@ -3,7 +3,7 @@
 
 // Variables
 $color-principal: #fff;
-$color-secundario: rgb(44, 64, 84);
+$color-secundario: rgb(0, 43, 69);
 $color-terciario: rgb(245, 13, 73);
 $color-gris: rgb(227, 233, 233);
 $color-letra: black;
@@ -167,6 +167,72 @@ body {
     margin: 0 0 0 20px;
     padding: 0 5px 0 5px;
 }
+
+
+.botones {
+    display: flex;
+    justify-content: end;
+    flex-wrap: wrap;
+    position: relative;
+    top: 30vh;
+}
+
+
+.phone {
+    position: relative;
+    left: 10vw;
+}
+
+
+.links {
+    color: $color-secundario;
+}
+
+
+
+.usuario {
+    text-decoration: none;
+    color: $color-secundario;
+}
+
+
+.foot {
+    text-decoration: none;
+    color: $color-principal;
+    padding-left: 30px;
+}
+
+.grupo-santander {
+    width: 200px;
+    height: auto;
+}
+
+
+.santander {
+    background: $color-secundario;
+}
+
+.logo {
+    padding-left: 30px;
+}
+
+.footer {
+    display: inline;
+    justify-content: space-between;
+    padding-left: 30px;
+    padding-top: 15px;
+}
+
+.copyright {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    padding-top: 15px;
+    background-color: $color-gris;
+    color: $color-secundario;
+}
+
+
 
 
 //Mixins
