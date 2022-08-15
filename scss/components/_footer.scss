@@ -1,0 +1,69 @@
+// Esto es el footer
+
+
+.links {
+   /* color: $color-secundario;*/
+   /* reemplazo lpor un mixin*/
+    @include letras-azules;
+}
+
+
+.usuario {
+    text-decoration: none;
+    /* color: $color-secundario;*/
+    /* reemplazo lpor un mixin*/
+    @include letras-azules;
+}
+
+.defensa {
+    color: gray;
+}
+
+.reclamos {
+    /* color: $color-secundario;*/
+    /* reemplazo lpor un mixin*/
+    @include letras-azules;
+}
+
+
+.foot {
+    text-decoration: none;
+    color: $color-principal;
+    padding-left: 30px;
+}
+
+.grupo-santander {
+    width: 200px;
+    height: auto;
+}
+
+
+.santander {
+    background: $color-secundario;
+}
+
+.logo {
+    padding-left: 30px;
+}
+
+.footer {
+    display: inline;
+    justify-content: space-between;
+    padding-left: 30px;
+    padding-top: 15px;
+}
+
+.copyright {
+    margin-top: 2rem;
+    /*aplico un extend*/
+    @extend .copyright1;
+}
+
+.copyright1 {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    padding-top: 15px;
+    background-color: $color-gris;
+    color: $color-secundario;
+}

@@ -1,0 +1,10 @@
+//Mixins
+
+@mixin tarjetas {
+    border-radius: 4px;
+    padding: 30px 15px;
+}
+
+@mixin letras-azules {
+    color: map-get($colors, color-secundario)
+}

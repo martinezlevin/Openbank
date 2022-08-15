@@ -1,0 +1,17 @@
+/* Variables */
+$color-principal: #fff;
+$color-secundario: rgb(0, 43, 69);
+$color-terciario: rgb(245, 13, 73);
+$color-gris: rgb(227, 233, 233);
+$color-letra: black;
+
+//mapa
+$colors: (
+    "color-principal": #fff,
+    "color-secundario": rgb(0, 43, 69),
+    "color-terciario": rgb(245, 13, 73),
+    "color-gris": rgb(227, 233, 233),
+    "color-letra":  black
+);
+
+/*aplico los colores del mapa en card.scss*/

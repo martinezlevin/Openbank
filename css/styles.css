@@ -1,3 +1,5 @@
+/* Variables */
+/*aplico los colores del mapa en card.scss*/
 .card h5 {
   font-family: Arial, Helvetica, sans-serif;
 }
@@ -5,27 +7,93 @@
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-body {
-  background: #fff;
-}
-
-.navbar {
-  position: fixed;
+.contenido {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  align-items: center;
   width: 100%;
-  z-index: 1;
-  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
+  padding: 4rem;
 }
 
-.btn-outline-custom {
+.row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  max-width: 1000px;
+  position: relative;
+  top: 10px;
+}
+
+.contenido {
+  background-color: #fff;
+  padding: 15px;
+  position: relative;
+  z-index: 2;
+  border-radius: 8px;
+  box-shadow: 1px 1px 15px 0px #000;
+  margin: auto;
+}
+
+/*Aqui aplico colores con un mapa*/
+.texto-blanco {
+  color: #fff;
+}
+
+.texto-azul {
   color: rgb(0, 43, 69);
-  background-color: rgb(0, 43, 69);
-  border-color: rgb(0, 43, 69);
+}
+
+/* aplico mixins en las tarjetas */
+.card-1 {
+  background: rgb(0, 43, 69);
+  color: #fff;
+  /*border-radius: 4px;
+  padding: 30px 15px;*/
+  border-radius: 4px;
+  padding: 30px 15px;
+}
+
+.card-2 {
+  background: #fff;
+  /*border-radius: 4px;
+  padding: 30px 15px;*/
+  border-radius: 4px;
+  padding: 30px 15px;
+}
+
+.card-3 {
+  background: rgb(227, 233, 233);
+  /*border-radius: 4px;
+  padding: 30px 15px;*/
+  border-radius: 4px;
+  padding: 30px 15px;
+}
+
+.card-4 {
+  background: rgb(245, 13, 73);
+  /*border-radius: 4px;
+  padding: 30px 15px;*/
+  border-radius: 4px;
+  padding: 30px 15px;
+}
+
+.svg {
+  position: relative;
+  left: 90%;
+}
+
+.card {
+  width: 100%;
+  height: auto;
+}
+
+.card {
+  transition: 0.4s;
+  object-fit: cover;
+}
+
+.card:hover {
+  transform: scale(1.1);
 }
 
 .carousel {
@@ -64,95 +132,6 @@ body {
   bottom: 25vh;
 }
 
-.contenido {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  align-items: center;
-  width: 100%;
-  padding: 4rem;
-}
-
-.row {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  max-width: 1000px;
-  position: relative;
-  top: 10px;
-}
-
-.contenido {
-  background-color: #fff;
-  padding: 15px;
-  position: relative;
-  z-index: 2;
-  border-radius: 8px;
-  box-shadow: 1px 1px 15px 0px #000;
-  margin: auto;
-}
-
-.texto-blanco {
-  color: #fff;
-}
-
-.texto-azul {
-  color: rgb(0, 43, 69);
-}
-
-.card-1 {
-  background: rgb(0, 43, 69);
-  color: #fff;
-  border-radius: 4px;
-  padding: 30px 15px;
-}
-
-.card-3 {
-  background-color: rgb(227, 233, 233);
-  border-radius: 4px;
-  padding: 30px 15px;
-}
-
-.card-4 {
-  background-color: rgb(245, 13, 73);
-  border-radius: 4px;
-  padding: 30px 15px;
-}
-
-.svg {
-  position: relative;
-  left: 90%;
-}
-
-.card {
-  width: 100%;
-  height: auto;
-}
-
-.card {
-  transition: 0.4s;
-  object-fit: cover;
-}
-
-.card:hover {
-  transform: scale(1.1);
-}
-
-.redes {
-  display: flex;
-  text-align: center;
-  justify-content: center;
-  padding: 10px;
-  padding-top: 20px;
-  margin-top: 3rem;
-  background-color: rgb(227, 233, 233);
-  color: rgb(0, 43, 69);
-}
-
-.card-link {
-  margin: 0 0 0 20px;
-  padding: 0 5px 0 5px;
-}
-
 .botones {
   display: flex;
   justify-content: end;
@@ -167,11 +146,15 @@ body {
 }
 
 .links {
+  /* color: $color-secundario;*/
+  /* reemplazo lpor un mixin*/
   color: rgb(0, 43, 69);
 }
 
 .usuario {
   text-decoration: none;
+  /* color: $color-secundario;*/
+  /* reemplazo lpor un mixin*/
   color: rgb(0, 43, 69);
 }
 
@@ -180,6 +163,8 @@ body {
 }
 
 .reclamos {
+  /* color: $color-secundario;*/
+  /* reemplazo lpor un mixin*/
   color: rgb(0, 43, 69);
 }
 
@@ -210,22 +195,56 @@ body {
 }
 
 .copyright {
+  margin-top: 2rem;
+  /*aplico un extend*/
+}
+
+.copyright1, .copyright {
   display: flex;
   text-align: center;
   justify-content: center;
   padding-top: 15px;
-  margin-top: 2rem;
   background-color: rgb(227, 233, 233);
   color: rgb(0, 43, 69);
 }
 
-.copyright1 {
+.navbar {
+  position: fixed;
+  width: 100%;
+  z-index: 1;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+.btn-outline-custom {
+  color: rgb(0, 43, 69);
+  background-color: rgb(0, 43, 69);
+  border-color: rgb(0, 43, 69);
+}
+
+.redes {
   display: flex;
   text-align: center;
   justify-content: center;
-  padding-top: 15px;
+  padding: 10px;
+  padding-top: 20px;
+  margin-top: 3rem;
   background-color: rgb(227, 233, 233);
   color: rgb(0, 43, 69);
+}
+
+.card-link {
+  margin: 0 0 0 20px;
+  padding: 0 5px 0 5px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #fff;
 }
 
 /*# sourceMappingURL=styles.css.map */

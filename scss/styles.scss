@@ -1,0 +1,25 @@
+//Partial imports
+
+//Base
+@import 'base/variables';
+@import 'base/mixin';
+//components
+@import 'components/anidacion';
+@import 'components/cards';
+@import 'components/carousel';
+@import 'components/contenido';
+@import 'components/footer';
+@import 'components/navbar';
+@import 'components/redes';
+
+
+//body
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: $color-principal;
+}

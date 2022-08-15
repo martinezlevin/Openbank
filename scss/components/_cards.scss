@@ -1,0 +1,93 @@
+
+// Cards
+
+.contenido {
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    align-items: center;
+    width: 100%;
+    padding: 4rem;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    max-width: 1000px;
+    position: relative;
+    top: 10px;
+}
+
+
+.contenido {
+    background-color: #fff;
+    padding: 15px;
+    position: relative;
+    z-index: 2;
+    border-radius: 8px;
+    box-shadow:  1px 1px 15px 0px #000;
+    margin: auto;
+}
+
+
+/*Aqui aplico colores con un mapa*/
+
+.texto-blanco {
+    color: map-get($colors, color-principal);
+}
+
+.texto-azul {
+    color: map-get($colors, color-secundario);
+}
+
+/* aplico mixins en las tarjetas */
+.card-1 {
+    background: map-get($colors, color-secundario);
+    color: #fff;
+    /*border-radius: 4px;
+    padding: 30px 15px;*/
+    @include tarjetas;
+}
+
+.card-2 {
+    background: map-get($colors, color-principal);
+    /*border-radius: 4px;
+    padding: 30px 15px;*/
+    @include tarjetas;
+}
+
+.card-3 {
+    background: map-get($colors, color-gris);
+    /*border-radius: 4px;
+    padding: 30px 15px;*/
+    @include tarjetas;
+}
+.card-4 {
+    background: map-get($colors, color-terciario);
+    /*border-radius: 4px;
+    padding: 30px 15px;*/
+    @include tarjetas;
+}
+
+.svg {
+    position: relative;
+    left: 90%;
+}
+
+// ANIMATION CARDS
+  
+.card{
+      width: 100%;
+      height: auto;
+  }
+ 
+.card {
+   transition: 0.4s;
+   object-fit: cover;
+  }
+ 
+.card:hover {
+   transform: scale(1.1);
+  }
+
+
