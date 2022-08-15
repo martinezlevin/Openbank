@@ -237,6 +237,20 @@
   padding: 0 5px 0 5px;
 }
 
+.webs {
+  width: 100%;
+  height: auto;
+}
+
+.webs {
+  transition: 0.2s;
+  object-fit: cover;
+}
+
+.webs:hover {
+  transform: scale(1.4);
+}
+
 * {
   margin: 0;
   padding: 0;

@@ -16,3 +16,21 @@
     margin: 0 0 0 20px;
     padding: 0 5px 0 5px;
 }
+
+
+// ANIMATION CARDS
+  
+.webs{
+    width: 100%;
+    height: auto;
+}
+
+.webs {
+ transition: 0.2s;
+ object-fit: cover;
+}
+
+.webs:hover {
+ transform: scale(1.4);
+}
+
