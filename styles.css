@@ -16,7 +16,16 @@ body {
 }
 
 .navbar {
+  position: fixed;
+  width: 100%;
   z-index: 1;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+.btn-outline-custom {
+  color: rgb(0, 43, 69);
+  background-color: rgb(0, 43, 69);
+  border-color: rgb(0, 43, 69);
 }
 
 .carousel {
@@ -133,6 +142,7 @@ body {
   text-align: center;
   justify-content: center;
   padding: 10px;
+  padding-top: 20px;
   margin-top: 3rem;
   background-color: rgb(227, 233, 233);
   color: rgb(0, 43, 69);
@@ -165,6 +175,14 @@ body {
   color: rgb(0, 43, 69);
 }
 
+.defensa {
+  color: gray;
+}
+
+.reclamos {
+  color: rgb(0, 43, 69);
+}
+
 .foot {
   text-decoration: none;
   color: #fff;
@@ -192,6 +210,16 @@ body {
 }
 
 .copyright {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  padding-top: 15px;
+  margin-top: 2rem;
+  background-color: rgb(227, 233, 233);
+  color: rgb(0, 43, 69);
+}
+
+.copyright1 {
   display: flex;
   text-align: center;
   justify-content: center;
